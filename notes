@@ -1,0 +1,5 @@
+DataDump
+
+PreProcessing
+awk -F'\t' '{print "dict[\"" $4 "\"]=[" $6 "," $8 "," $10 "]"}' normal_dump | sort | uniq | tail -r
+
